@@ -6,9 +6,9 @@ from datetime import datetime, timedelta
 import uuid
 
 # --- Configuration ---
-NUM_RECORDS = 500000
-NUM_USERS = 2500
-ANOMALY_RATE = 0.05 # 2% of transactions will be anomalous
+NUM_RECORDS = 100000
+NUM_USERS = 200
+ANOMALY_RATE = 0.15 # 2% of transactions will be anomalous
 
 # --- Initialization ---
 fake = Faker()
@@ -93,7 +93,7 @@ df = pd.DataFrame(transactions)
 df = df.sample(frac=1).reset_index(drop=True)
 
 # Save to a CSV file
-output_filename = 'transaction_dataset.csv'
+output_filename = 'new_transactions.csv'
 df.to_csv(output_filename, index=False)
 
 print(f"\n✅ Successfully generated the dataset!")

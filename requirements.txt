@@ -10,3 +10,5 @@ Faker
 ipykernel
 matplotlib
 seaborn
+xgboost
+imbalanced-learn
