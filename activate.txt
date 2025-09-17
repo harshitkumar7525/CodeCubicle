@@ -1,0 +1,1 @@
+conda activate "/home/harshit-kumar/Desktop/Disk D/CodeCubicle/.venv"
