@@ -6,9 +6,9 @@ from datetime import datetime, timedelta
 import uuid
 
 # --- Configuration ---
-NUM_RECORDS = 50000
-NUM_USERS = 2000
-ANOMALY_RATE = 0.02 # 2% of transactions will be anomalous
+NUM_RECORDS = 500000
+NUM_USERS = 2500
+ANOMALY_RATE = 0.05 # 2% of transactions will be anomalous
 
 # --- Initialization ---
 fake = Faker()
