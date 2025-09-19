@@ -9,7 +9,7 @@ model = joblib.load('xgb_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # Load new dataset
-df_new = pd.read_csv('new_transactions.csv')  # Replace with your file path
+df_new = pd.read_csv('transaction_dataset.csv')  # Replace with your file path
 
 # Preprocess: create features same as during training
 df_new['txn_date'] = pd.to_datetime(df_new['txn_date'])
