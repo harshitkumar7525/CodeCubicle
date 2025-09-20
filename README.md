@@ -128,3 +128,24 @@ python predict.py
 ```
 
 You will see the evaluation metrics for the new dataset printed to the console.
+
+## 📁 Project Structure
+
+```
+.
+├── data
+│   ├── transaction_dataset.csv   # Dataset for training
+│   └── new_transactions.csv      # Dataset for prediction
+├── main.ipynb                      # Notebook for model training and experimentation
+├── predict.py                      # Script for making predictions on new data
+├── xgb_model.pkl                   # Saved XGBoost model
+├── scaler.pkl                      # Saved data scaler
+├── requirements.txt                # Python dependencies
+└── Readme.md                       # You are here!
+```
+
+## 🔮 Future Work
+
+* **Real-Time Data Ingestion**: Replace the CSV reader with a real-time stream consumer like **Kafka** or a **REST API endpoint**.
+* **LLM-Powered Explanations**: For each detected anomaly, send the feature data to a Large Language Model (LLM) to generate a human-readable alert, as suggested in the hackathon prompt (e.g., *“Unusual login detected: transaction amount is 50x higher than user's average and occurred 2000km from their normal location.”*).
+* **Dashboarding & Alerting**: Create a live dashboard (using Streamlit or Dash) to visualize anomalies as they are detected and push alerts to platforms like Slack or Discord.
